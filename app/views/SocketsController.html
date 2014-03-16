@@ -1,0 +1,17 @@
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io.connect('http://localhost:8888');
+  socket.on('greeting', function (data) {
+      var output = document.getElementById('output');
+      output.innerHTML += data.msg + '<br />';
+  });
+  
+  var emitEvent = function(){
+      var name = document.getElementById('firstname').value;
+      socket.emit('greeting', {'msg': name});
+  }
+  
+</script>
+<input type="text" id="firstname" />
+<button onclick="emitEvent();">Przywitaj sie</button>
+<div id="output"></div>

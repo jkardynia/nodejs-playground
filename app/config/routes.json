@@ -1,0 +1,12 @@
+[{
+    "name": "simpleRoute",
+    "url": "/simple",
+    "method": "GET",
+    "controller": "SimpleController"
+},
+{
+    "name": "sockets",
+    "url": "/sockets-test",
+    "method": "GET",
+    "controller": "SocketsController"
+}]

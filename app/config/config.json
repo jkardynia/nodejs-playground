@@ -1,0 +1,5 @@
+{
+    "controllersPath": "./controllers",
+    "viewsPath": "./app/views",
+    "socketEventsPath": "./Socket"
+}
